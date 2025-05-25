@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Lumar</title>
+    <link rel="stylesheet" type="text/css" href="styleContato.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="./index.html" class="cabecalho-logo">Lumar</a>
+        <nav class="cabecalho-menu">
+            <a href="./produtos.html" class="cabecalho-menu-item">Produtos</a>
+            <a href="./sobre.html" class="cabecalho-menu-item">Sobre</a>
+            <a href="./contato.html" class="cabecalho-menu-item">Contato</a>
+        </nav>
+    </header>
+
+    <main class="principal-contato">
+        <h1 class="principal-contato-titulo">Contato</h1>
+
+        <form class="formulario">
+            <label for="email" class="principal-contato-item1">SEU E-MAIL</label>
+            <input class="boxEmail" id="email" type="email" placeholder="example@gmail.com" required>
+
+            <label for="mensagem" class="principal-contato-item2">MENSAGEM</label>
+            <textarea class="boxMensagem" id="mensagem" placeholder="Mensagem" required></textarea>
+            <button class="botaoEnviar" id="botaoEnviar">Enviar</button>
+        </form>
+        <dialog id="modal">
+            <div class="ajuste">
+            <p class="modal-text">Mensagem Enviada. Obrigado!</p>
+            <button class="close" id="button_close">Fechar</button>
+            </div>
+        </dialog>
+        <script>
+            const botaoEnviar = document.querySelector("#botaoEnviar");
+            const button_close = document.querySelector("#button_close");
+
+            botaoEnviar.onclick = function() {
+                event.preventDefault();
+                modal.showModal();
+            }
+
+            button_close.onclick = function() {
+                modal.close();
+                location.reload();
+            }
+        </script>
+        <img class="fundo-contato" src="elementos contato/fundo contato.svg">
+        <img class="decoracao-contato" src="elementos contato/decoracao contato.svg">
+    </main>
+
+    <footer class="rodape">
+
+        <h1 class="rodape-logo">Lumar</h1>
+
+        <div class="rodape-esquerda">
+        <p class="rodape-titulo"><strong>HELP CENTER</strong></p>
+        <p class="rodape-menu-item">Contact Us</p>
+        <p class="rodape-menu-item">Instagram</p>
+        <p class="rodape-menu-item">Twitter</p>
+        <p class="rodape-menu-item">Facebook</p>
+
+        </div>
+        <div class="rodape-direita">
+        <p class="rodape-titulo"><strong>COMPANY</strong></p>
+        <p class="rodape-menu-item">About</p>
+        <p class="rodape-menu-item">Careers</p>
+        <p class="rodape-menu-item">Values</p>
+        <p class="rodape-menu-item">Blog</p>
+        </div>
+        <img class="rodape-fundo" src="imagens index/fundoRodape.svg" alt="fundo rodape">
+    </footer>
+</body>
+</html>

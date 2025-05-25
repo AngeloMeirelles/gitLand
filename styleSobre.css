@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jura:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding:  0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background-color: black;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 18px;
+}
+
+.cabecalho-menu{
+    display: flex;
+    gap: 32px;
+}
+
+.cabecalho-logo {
+    font-family: "Jura", sans-serif;
+    color: white;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.cabecalho-menu-item {
+    font-family: "Roboto Condensed", sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.tudo-principal{
+    position: relative;
+}
+
+.principal {
+    display: flex;
+    direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 180px;
+}
+
+.coroa{
+    margin-left: 300px;
+    margin-top: 50px;
+    z-index: 1;
+}
+
+.sobre-descricao {
+    font-family: "Work Sans", sans-serif;
+    margin-right: 100px;
+    color: white;
+}
+
+.retangulo-logo {
+    font-family: "Jura", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    color: white;
+    margin-left: 300px;
+    margin-top: -70px;
+    
+}
+
+.retangulo {
+    margin-left: 240px;
+    margin-top: -60px;
+    height: 132px;
+    z-index: 0;
+}
+
+.rodape {
+    position: relative;
+    margin-top: 120px;
+}
+
+.rodape-logo {
+    font-family: "Jura", sans-serif;
+    color: white;
+    font-size: 50px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.rodape-esquerda{
+    display: flex;
+    font-family: "Inter", sans-serif;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-right: 1000px;
+    margin-top: -120px;
+    color: white;
+    z-index: 1;
+}
+
+.rodape-direita{
+    display: flex;
+    font-family: "Inter", sans-serif;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-left: 1000px;
+    margin-top: -170px;
+    color: white;
+    z-index: 1;
+}
+
+.rodape-titulo {
+    display: flex;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    color: white;
+    z-index: 1;
+}
+
+.rodape-menu-item {
+    z-index: 1;
+}
+
+
+.rodape-fundo {
+    margin-top: -177px;
+    z-index: 0;
+}

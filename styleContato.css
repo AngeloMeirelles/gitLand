@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jura:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background-color: black;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 18px;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 32px;
+}
+
+.cabecalho-logo {
+    font-family: "Jura", sans-serif;
+    color: white;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.cabecalho-menu-item {
+    font-family: "Roboto Condensed", sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.principal-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.principal-contato-titulo {
+    font-family: "Jura", sans-serif;
+    color: white;
+    font-size: 64px;
+    margin-top: 40px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d9d9d9;
+    padding: 60px 40px;
+    border-radius: 40px;
+    gap: 30px;
+    z-index: 1;
+}
+
+.principal-contato-item1,
+.principal-contato-item2 {
+    font-family: "Jura", sans-serif;
+    color: black;
+    font-size: 20px;
+    align-self: flex-start;
+}
+
+.boxEmail {
+    width: 400px;
+    padding: 12px 16px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+}
+
+.boxMensagem {
+    width: 700px;
+    height: 200px;
+    padding: 16px;
+    border-radius: 30px;
+    font-size: 16px;
+    resize: none;
+    border: none;
+}
+
+.botaoEnviar {
+    width: 120px;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.botaoEnviar:hover {
+    background-color: #333;
+}
+
+.fundo-contato {
+    margin-top: -625px;
+    z-index: 0;
+}
+
+.decoracao-contato {
+    position: absolute;
+    bottom: 50px; /* aumenta esse valor para subir */
+    left: 50px;
+    z-index: 9999;
+}
+
+.rodape {
+    position: relative;
+    z-index: 1;
+    margin-top: 150px;
+}
+
+.rodape-logo {
+    font-family: "Jura", sans-serif;
+    color: white;
+    font-size: 50px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+
+}
+
+.rodape-esquerda{
+    display: flex;
+    font-family: "Inter", sans-serif;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-right: 1000px;
+    margin-top: -120px;
+    color: white;
+    z-index: 1;
+}
+
+.rodape-direita{
+    display: flex;
+    font-family: "Inter", sans-serif;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-left: 1000px;
+    margin-top: -170px;
+    color: white;
+    z-index: 1;
+}
+
+.rodape-titulo {
+    display: flex;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    color: white;
+    z-index: 1;
+}
+
+.rodape-menu-item {
+    z-index: 1;
+}
+
+
+.rodape-fundo {
+    z-index: 0;
+    position: relative;
+    margin-top: -500px; /* Adicione isso se não tiver */
+}
+
+dialog {
+    * {
+        margin: 0;
+        padding:  0;
+        box-sizing: border-box;
+        text-decoration: none;
+       }
+
+       .ajuste {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 15px;
+       }    
+
+       .close {
+        font-family: "Inter", sans-serif;
+        display: flex;
+        cursor: pointer;
+        margin: 0 auto;
+
+        color: white;
+        background-color: #1B1212; 
+        font-size: 20px;
+        font-weight: 500;
+
+        border: none;
+        border-radius: 50px; 
+        padding: 10px 30px; 
+
+        cursor: pointer;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.modal-text {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    display: flex;
+    margin-right: 20px;
+}
+
+width: 800px;
+margin: 100px auto;
+border: none;
+border-radius: 50px;
+box-shadow: 0 0 10px white;
+margin-top: 100px;
+}
